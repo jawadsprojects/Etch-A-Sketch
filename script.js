@@ -1,6 +1,7 @@
 let container = document.querySelector('#container');
 
-let rowsAndCols = 16;
+let rowsAndCols = prompt("Enter the number of rows and columns:");
+
 
 for (let i = 0; i < rowsAndCols; i++) {
     for (let j = 0; j < rowsAndCols; j++) {
@@ -10,10 +11,13 @@ for (let i = 0; i < rowsAndCols; i++) {
     }
 }
 
+container.style.gridTemplateColumns = `repeat(${rowsAndCols}, 1fr)`;
+container.style.gridTemplateRows = `repeat(${rowsAndCols}, 1fr)`;
+
 let childrenDivs = document.querySelectorAll(".child"); 
 
-for(children of childrenDivs){
-    children.addEventListener("click", function() {
+for (let child of childrenDivs) {
+    child.addEventListener("mouseover", function() {
         this.style.backgroundColor = "black"; 
     });
 }

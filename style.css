@@ -1,18 +1,18 @@
-#container{
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    max-width: 960px;
-    margin: 0 auto;
-    border: 1px solid black;
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height:100vh; */
 }
 
-.child{
-    /* background: #3bbced; */
-    padding: 20px;
-    border: 0.2px solid black;
+#container {
+  display: grid;
+  width: 500px;
+  height: 500px;
 }
 
-/* 
-.child:nth-child(even){
-    background:#777;
-} */
+.child {
+  border: 0.2px solid black;
+  background-color: white; /* Set the default background color */
+  aspect-ratio: 1/1; /* Maintain the square aspect ratio */
+}
