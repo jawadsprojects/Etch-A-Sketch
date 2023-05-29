@@ -1,3 +1,7 @@
+*{
+  background-color: #ededed;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -22,4 +26,15 @@
 
 .size{
   padding-top: 10px;
+}
+
+h1 { 
+  font-size: 50px;
+  align-self: center;
+  text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
 }
