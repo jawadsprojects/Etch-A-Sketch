@@ -4,7 +4,7 @@ initializeEtchASketch(16);
 function initializeEtchASketch(rowsAndCols = 10) {
 
     if (isNaN(rowsAndCols) || rowsAndCols < 2 || rowsAndCols > 100) {
-        alert("please enter a valid number!");
+        alert("please enter a valid number between 2-10(inclusive)!");
         return;
     }
 
