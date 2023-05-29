@@ -1,8 +1,9 @@
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height:100vh; */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height:100vh; */
+  flex-direction: column;
 }
 
 #container {
@@ -13,6 +14,12 @@
 
 .child {
   border: 0.2px solid black;
-  background-color: white; /* Set the default background color */
-  aspect-ratio: 1/1; /* Maintain the square aspect ratio */
+  background-color: white;
+  /* Set the default background color */
+  aspect-ratio: 1/1;
+  /* Maintain the square aspect ratio */
+}
+
+.size{
+  padding-top: 10px;
 }
