@@ -1,10 +1,19 @@
-function initializeEtchASketch() {
+initializeEtchASketch(16);
+
+
+function initializeEtchASketch(rowsAndCols=10) {
+
+    if(isNaN(rowsAndCols) || rowsAndCols < 2 || rowsAndCols>100){
+        alert("please enter a valid number!");
+        return;
+    }
+
     let container = document.querySelector('#container');
 
     container.innerHTML = "";
   
-    let userInput = document.getElementById("sizeInput");
-    let rowsAndCols = parseInt(userInput.value);
+    // let userInput = document.getElementById("sizeInput");
+    // let rowsAndCols = parseInt(userInput.value);
   
     for (let i = 0; i < rowsAndCols; i++) {
       for (let j = 0; j < rowsAndCols; j++) {
